@@ -1,0 +1,191 @@
+/* #00634a green color */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: #00634a;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 38px;
+}
+
+.title-bar {
+    text-align: center;
+    font-size: 24px;
+    color: #00634a;
+    padding: 14px;
+    background-color: #eee;
+}
+
+.accounts {
+    display: flex;
+    flex-direction: column;
+}
+
+.accounts:hover {
+    cursor: pointer;
+}
+
+.accounts .card {
+    width: 75%;
+    background-color: #00634a;
+    color: #fff;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+form {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#description {
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px #00634a solid;
+    border-radius: 5px;
+    width: 80%;
+}
+
+
+
+.descript-label {
+    color:#00634a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.amount-label {
+    color:#00634a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input#amount {
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px #00634a solid;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.radio {
+    margin-top: 10px;
+}
+
+
+
+button {
+    background-color: #00634a;
+    color: #fff;
+    margin: 20px 0;
+    padding: 10px 40px;
+    border-radius: 20px;
+    width: 30%;
+    font-size: large;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #048867;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;    
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 600px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.item i {
+    color: #0D2FC7;
+}
+
+.item i:hover {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.radio .fa-dollar-sign {
+    color: #0D2FC7;
+    font-size: 20px;
+}
+
+.credit {
+    color: #ff4444;
+}
+
+.debit {
+    color: #00C851
+}
+
+
+
+
+
+/* Responsive Design */
+
+@media screen and (min-width: 430px) {
+    .num {
+        display: block;
+    }
+    .accounts .card {
+        text-align: center;
+        padding: 10px;   
+        margin: 10px 15px;
+        max-width: 360px;
+        }
+    .accounts {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #description {
+        max-width: 550px;
+        
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .container {
+        max-width: 1100;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 675px) {
+    .item {
+        margin: 10px auto;
+        width: 600px;
+    }
+}
+
+
+
+
+
+

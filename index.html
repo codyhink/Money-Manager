@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0fb28b3844.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Money Manager</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="hero">
+        <h1>Money <i class="fa-solid fa-money-bill icon"></i> Manager</h1>
+      </header>
+
+      <div class="title-bar">
+        <h3>Accounts</h3>
+      </div>
+
+      <section class="accounts">
+        <div class="card">
+          <p>Checking Account: <span class="num">$5,600</span></p>
+        </div>
+        <div class="card">
+          <p>Savings Account: <span class="num">$15,000</span></p>
+        </div>
+      </section>
+
+      <div class="title-bar">
+        <h3>Income/Expense Tracker</h3>
+      </div>
+
+      <section class="tracker">
+        <form id="addNewTransaction">
+          <label class="descript-label" for="description"
+            >Enter Transaction</label
+          ><br />
+          <input
+            type="text"
+            name="description"
+            id="description"
+            placeholder="Enter a description"
+          />
+          <br />
+          <div class="radio">
+            <label for="expense">Expense</label>
+            <input
+              type="radio"
+              id="expense"
+              name="plus-minus"
+              value="expense"
+            />
+            <label for="income">Income</label>
+            <input
+              type="radio"
+              name="plus-minus"
+              id="income"
+              value="income"
+            /><br /><br />
+            <label for="amount" class="amount-label">Amount</label><br />
+            <i class="fa-solid fa-dollar-sign"></i>
+            <input
+              type="text"
+              name="amount"
+              id="amount"
+              placeholder="Enter total"
+            />
+          </div>
+          <button id="submit">Add</button>
+        </form>
+      </section>
+
+      <div class="items">
+        <div class="item">
+          <p>Cerner</p>
+          <p class="debit">$1900</p>
+          <i class="fa-solid fa-trash delete"></i>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
