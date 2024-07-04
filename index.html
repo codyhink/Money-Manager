@@ -22,10 +22,12 @@
 
       <section class="accounts">
         <div class="card">
-          <p>Checking Account: <span class="num">$5,600</span></p>
+          <p>Checking Account: </p>
+          <p class="num" id="checking"></p>
         </div>
         <div class="card">
-          <p>Savings Account: <span class="num">$15,000</span></p>
+          <p>Savings Account: </p>
+          <p class="num" id="savings"></p>
         </div>
       </section>
 
@@ -60,6 +62,12 @@
               id="income"
               value="income"
             /><br /><br />
+            <label for="choose-account">Select Account</label>
+            <select id="choose-account">
+              <option value="checking">Checking</option>
+              <option value="savings">Savings</option>
+            </select>
+            <br>
             <label for="amount" class="amount-label">Amount</label><br />
             <i class="fa-solid fa-dollar-sign"></i>
             <input
@@ -75,8 +83,8 @@
 
       <div class="items">
         <div class="item">
-          <p>Cerner</p>
-          <p class="debit">$1900</p>
+          <p>Paycheck</p>
+          <p class="debit">$1500</p>
           <i class="fa-solid fa-trash delete"></i>
         </div>
       </div>

@@ -32,10 +32,6 @@
     flex-direction: column;
 }
 
-.accounts:hover {
-    cursor: pointer;
-}
-
 .accounts .card {
     width: 75%;
     background-color: #00634a;
@@ -45,6 +41,7 @@
     border-radius: 10px;
     text-align: center;
     font-size: large;
+    cursor: pointer;
 }
 
 form {
@@ -84,6 +81,11 @@ input#amount {
 
 .radio {
     margin-top: 10px;
+}
+
+#choose-account {
+    margin-bottom: 12px;
+    font-size: 18px;
 }
 
 
@@ -160,8 +162,8 @@ button:hover {
         max-width: 360px;
         }
     .accounts {
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
     }
 
     #description {
@@ -175,12 +177,20 @@ button:hover {
         max-width: 1100;
         margin: 0 auto;
     }
+    .accounts {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 }
 
 @media screen and (min-width: 675px) {
     .item {
         margin: 10px auto;
         width: 600px;
+    }
+    .accounts {
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
 
