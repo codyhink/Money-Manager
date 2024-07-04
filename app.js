@@ -69,8 +69,8 @@ function updateAccount(account, plusMinus, amount) {
 			: (checkingTotal += Number(amount));
 	} else {
 		plusMinus === "expense"
-			? (savingsTotal -= amount)
-			: (savingsTotal += amount);
+			? (savingsTotal -= Number(amount))
+			: (savingsTotal += Number(amount));
 	}
 
 	checkingAccount.textContent = `$${addCommasToNumber(checkingTotal)}`;
