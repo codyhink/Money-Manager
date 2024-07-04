@@ -65,8 +65,8 @@ const newTransaction = (addedDescription, redGreen, userAmount) => {
 function updateAccount(account, plusMinus, amount) {
 	if (account === "checking") {
 		plusMinus === "expense"
-			? (checkingTotal -= amount)
-			: (checkingTotal += amount);
+			? (checkingTotal -= Number(amount))
+			: (checkingTotal += Number(amount));
 	} else {
 		plusMinus === "expense"
 			? (savingsTotal -= amount)
